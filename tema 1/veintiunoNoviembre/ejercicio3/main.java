@@ -8,7 +8,7 @@ class ejercicio3 extends Thread{
 
     public void run(){
         while (this.pasos < 50){
-            this.pasos += (Math.random());
+            pasos = pasos + ((int) (Math.random() * 10) + 1);
             System.out.println(this.name +": " + pasos);
             try{
                 Thread.sleep(1000);
